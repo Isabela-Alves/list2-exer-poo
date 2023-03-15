@@ -2,9 +2,9 @@ package org.exercicio.banco.template.model;
 
 /**
 *
-* Nome:
-* Curso:
-* Matrícula:
+* Nome:Isabela da Silva Alves
+* Curso:TSI
+* Matrícula:20221TSIIG0090
 * 
 */
 public class ContaBancaria {
