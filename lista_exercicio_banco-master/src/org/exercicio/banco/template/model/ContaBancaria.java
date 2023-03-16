@@ -65,7 +65,7 @@ public class ContaBancaria {
 	 * @param valor
 	 */
 	public void sacar(double valor) {
-		if(this.status == false) {
+	if(this.status == false) {
            System.out.print("Conta inativa.");
         }else if(valor <= 0) {
            System.out.print("Valor inválido para saque.");
@@ -126,16 +126,16 @@ public class ContaBancaria {
 	 * @param destino
 	 */
 	public void realizarTransferencia(double quantia, ContaBancaria destino) {
-		if(this.status == false) {
+	if(this.status == false) {
           System.out.print("Conta de origem inativa.");
         }
-		else if(destino.status == false) {
+	else if(destino.status == false) {
           System.out.print("Conta de destino inativa.");
         }
-    	else if(quantia > this.saldo) {
-    		  System.out.print("Saldo insuficiente para transferencia.");
+    	   else if(quantia > this.saldo) {
+           System.out.print("Saldo insuficiente para transferencia.");
     	 }else
-    		  this.saldo-=quantia;
+    		this.saldo-=quantia;
                 destino.saldo+=quantia;
         }
 	
